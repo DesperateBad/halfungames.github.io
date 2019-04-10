@@ -92,12 +92,7 @@ body {
     border-top: none;
 	font-family: "Roboto Light";
 	position: relative;
-}
-
-/*Wrap Text*/
-.textWrap {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    width: inherit;
 }
 
 .moveDownOnHover {
