@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 304.58 122.68">
+  <defs>
+    <clipPath id="a" transform="translate(-3.87 9.79)">
+      <rect x="5.8" y="13" width="298.8" height="22.2" transform="translate(-1.83 27.32) rotate(-10)" style="fill: none"/>
+    </clipPath>
+    <clipPath id="b" transform="translate(-3.87 9.79)">
+      <rect x="5.8" y="13" width="298.8" height="22.2" transform="translate(-1.51 13.62) rotate(-5)" style="fill: none"/>
+    </clipPath>
+    <clipPath id="c" transform="translate(-3.87 9.79)">
+      <rect x="144.11" y="-78" width="22.2" height="298.8" transform="translate(57.94 211.85) rotate(-80)" style="fill: none"/>
+    </clipPath>
+    <clipPath id="d" transform="translate(-3.87 9.79)">
+      <rect x="144.1" y="-78" width="22.2" height="298.8" transform="translate(70.55 219.79) rotate(-85)" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <title>Logo2-Rescale2</title>
+  <g>
+    <text transform="translate(62.6 75.81)" style="isolation: isolate;font-size: 53.37889862060547px;fill: #00bfac;font-family: Rockwell-ExtraBold, Rockwell Extra Bold">GAMES</text>
+    <g>
+      <g style="clip-path: url(#a)">
+        <rect x="5.8" y="13" width="298.8" height="22.2" transform="translate(-5.38 23.4) rotate(-5)" style="fill: #fff"/>
+      </g>
+      <g style="clip-path: url(#b)">
+        <text transform="translate(5.39 80.08) rotate(-5)" style="isolation: isolate;font-size: 64.61840057373047px;font-family: Rockwell-ExtraBold, Rockwell Extra Bold">HALFUN</text>
+      </g>
+    </g>
+    <g>
+      <g style="clip-path: url(#c)">
+        <rect x="144.1" y="-78" width="22.2" height="298.8" transform="translate(66.68 229.58) rotate(-85)" style="fill: #fff"/>
+      </g>
+      <g style="clip-path: url(#d)">
+        <text transform="translate(1.52 79.25) rotate(5)" style="isolation: isolate;font-size: 64.61840057373047px;font-family: Rockwell-ExtraBold, Rockwell Extra Bold">HALFUN</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -94,6 +94,12 @@ body {
 	position: relative;
 }
 
+/*Wrap Text*/
+.textWrap {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 .moveDownOnHover {
     display: block;
     margin-left: auto;
@@ -116,9 +122,10 @@ body {
 
 p1 {
     padding-left: 120px; 
-    font-size: 1.5vw; 
+    font-size: 2vw; 
     font-family: Roboto Light; 
     position: absolute;
+    text-shadow: 4px 4px 4px #aaa;
 }
 
 p2 img {
@@ -132,7 +139,7 @@ p3 {
     text-shadow: 4px 4px 4px #aaa; 
     font-family: Roboto Light Italic; 
     padding-right: 120px;
-    font-size: 1.45vw;
+    font-size: 2vw;
 }
 
 .align-content-right {
