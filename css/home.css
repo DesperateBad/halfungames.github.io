@@ -131,8 +131,12 @@ p2 img {
 p3 {
     text-shadow: 4px 4px 4px #aaa; 
     font-family: Roboto Light Italic; 
-    padding-right: 20px; 
+    padding-right: 120px;
     font-size: 1.45vw;
+}
+
+.align-content-right {
+    text-align: right;
 }
 
 footer {
