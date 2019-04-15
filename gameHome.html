@@ -1,83 +1,264 @@
 <!DOCTYPE html>
 <html>
-<head>
-		<meta charset="UTF-8">
-		<title>Games Homepage</title>
-		
-		<link rel="stylesheet" href="css/home.css" type="text/css">
-		<link rel="stylesheet" href="css/nav.css" type="text/css">
-		<link rel="stylesheet" href="css/fonts.css" type="text/css">
-		<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<script src="js/jquery.min.js"></script>
-		
-		<link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		
-<script>
-$(document).ready(function(){
-  $(".scrollto").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
+  <head>
+    <meta charset="UTF-8">
+    <title>Game Home</title>
+
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <script src="js/modernizr.js"></script>
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".scrollto").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
       });
-    }
-  });
-});
-</script>
-	</head>
-<body>
-<header>
-  <nav class="cd-stretchy-nav">
+    </script>
+  </head>
+
+  <body>
+  <header>
+    <nav class="cd-stretchy-nav">
       <a class="cd-nav-trigger" href="#0">
-          <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
+      <ul>
+        <li class='icons' style="list-style-type: none;"><a href="index.html"><span>Home</span></a></li>
+        <li style="list-style-type: none;"><a href="gameHome.html" class="active"><span>Games</span></a></li>
+        <li style="list-style-type: none;"><a href=""><span>Media</span></a></li>
+        <li style="list-style-type: none;"><a href="about.html"><span>About</span></a></li>
+      </ul>
+      <span aria-hidden="true" class="stretchy-nav-bg"></span>
+    </nav>
+  </header>
+  <br>
 
-  <ul>
-      <li class='icons' style="list-style-type: none;"><a href="index.html"><span>Home</span></a></li>
-      <li style="list-style-type: none;"><a href="GamesHomepage.html" class="active"><span>Games</span></a></li>
-      <li style="list-style-type: none;"><a href="about.html"><span>About</span></a></li>
-  </ul>
-  <span aria-hidden="true" class="stretchy-nav-bg"></span>
-  </nav>
-</header>
-	
-	<br>
+  <div class="container">
+  	<p1>Pushing the limits</p1>
+      <p2><img style="padding-top: 25px; padding-bottom: 25px;" src="img/HFGSplash.png" width="714" height="250" alt="Logo"/></p2>
+      <div class="align-content-right">
+      <p3>Under acheiving</p3></div>
+  </div>
+  <br><br><br><br><br>
+  <div class="moveDownOnHover">
+      <a href="#games" class="scrollto">
+  	    <img src="img/arrow-down.png" width="50px" style="padding-top: 25px;">
+      </a>
+  </div>
+  <br><br><br><br><br><br>
+  <div id="games"></div>
+  <br><br>
+  <div class="games container">
+  	<div class="tab">
+  			<button class="tablinks" onclick="openGame(event, 'Aparnet')">Aparnet Tycoon</button>
+  			<button class="tablinks" onclick="openGame(event, 'Slippery')">Slippery Slopes</button>
+  			<button class="tablinks" onclick="openGame(event, 'Gun')">Gun Game</button>
+  			<button class="tablinks" onclick="openGame(event, 'Octopus')">Octopus Simulator</button>
+  	</div>
 
-<div class="grid-container" align="center">
-    <div class="grid-item"><a href="Games/BNW2.html">Black Navy War 2<a/></div>
-    <div class="grid-item"><a href="Games/BTD5.html">BTD5</a></div>
-    <div class="grid-item">Apple Shooter</div>
-    <div class="grid-item">Dolphin Olympics 2</div>
-    <div class="grid-item">Duck Life 4</div>
-    <div class="grid-item">Tetris</div> <div class="grid-item">Sprinter</div>
-    <div class="grid-item">Effing Worms</div>
-    <div class="grid-item">Shopping Cart Hero 2</div>
-</div>
-</body>
-	
-	<script>
-		function openGame(evt, gameName) {
+  	<div id="Aparnet" class="tabcontent">
+      <table style="width: 100%;">
+        <tr>
+          <td>
+            <img src="img/aparnet logo white.png">
+            <h2><span><a href="#media">WATCH NOW</a><span class="spacer"></span><br><span class="spacer"></span><a href="#donwload">PLAY NOW</a></span></h2>
+          </td>
+          <td style="text-align: center; width: 65%;">
+            <table style="width: 100%;">
+              <tr>
+                <th>
+                  <!--Game Title-->
+                  <h3>Aparnet Tycoon</h3>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <!--Gameplay Descrition-->
+                  <p>
+                    Micromanage a small coputer company.<br>Buy equipment and sell the processing power.<br>Market, grow and profit.
+                  </p>
+                  <!--Game Theme/Story-->
+                  <p>
+                    Set before the dawn of personal computing.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--Game Genre-->
+                  <p>
+                    [Tycoon]
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+  	</div>
+
+    <div id="Slippery" class="tabcontent">
+      <table style="width: 100%;">
+        <tr>
+          <td>
+            <img src="img/aparnet logo white.png">
+            <h2><span><a href="#media">WATCH NOW</a><span class="spacer"></span><br><span class="spacer"></span><a href="#donwload">PLAY NOW</a></span></h2>
+          </td>
+          <td style="text-align: center; width: 65%;">
+            <table style="width: 100%;">
+              <tr>
+                <th>
+                  <!--Game Title-->
+                  <h3>Slippery Slopes</h3>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <!--Gameplay Descrition-->
+                  <p>
+                    On a hill...<br>Under attack...<br>Going faster...
+                  </p>
+                  <!--Game Theme/Story-->
+                  <p>
+                    Escape the summit, avoid deadly obstacles and get to the bottom. At all costs...<br>SURVIVE
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--Game Genre-->
+                  <p>
+                    [Casual]
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  	<div id="Gun" class="tabcontent">
+      <table style="width: 100%;">
+        <tr>
+          <td>
+            <img src="img/aparnet logo white.png">
+            <h2><span><a href="#media">WATCH NOW</a><span class="spacer"></span><br><span class="spacer"></span><a href="#donwload">PLAY NOW</a></span></h2>
+          </td>
+          <td style="text-align: center; width: 65%;">
+            <table style="width: 100%;">
+              <tr>
+                <th>
+                  <!--Game Title-->
+                  <h3>Kill the cat</h3>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <!--Gameplay Descrition-->
+                  <p>
+                    *NOTE* DEVELOPMENT SUSPENDED<br>CURRENT STATE: INCOMPLETE<br>Basic gen, mechanics and AI
+                  </p>
+                  <!--Game Theme/Story-->
+                  <p>
+                    Find him. Kill him. Don't die. You are hunted.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--Game Genre-->
+                  <p>
+                    [Top-Down Shooter]
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  	
+  	<div id="Octopus" class="tabcontent">
+      <table style="width: 100%;">
+        <tr>
+          <td>
+            <img src="img/aparnet logo white.png">
+            <h2><span><a href="#media">WATCH NOW</a><span class="spacer"></span><br><span class="spacer"></span><a href="#donwload">PLAY NOW</a></span></h2>
+          </td>
+          <td style="text-align: center; width: 65%;">
+            <table style="width: 100%;">
+              <tr>
+                <th>
+                  <!--Game Title-->
+                  <h3>Octopus Walking Simulator</h3>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <!--Gameplay Descrition-->
+                  <p>
+                    A small demo of kinematics and 2d animation<br>Player Discretion is advised<br>Highly unenjoyable
+                  </p>
+                  <!--Game Theme/Story-->
+                  <p>
+                    Seriously there is no gameplay!
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--Game Genre-->
+                  <p>
+                    [Demo]
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <img src="img/about%20us.png" style="width: 50%; margin-left: auto; margin-right: auto; display: block; padding-top: 80px;">
+  	
+  <br><br><br>
+  </body>
+  <script>
+  	function openGame(evt, gameName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+      tabcontent[i].style.display = "none";
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(gameName).style.display = "block";
     evt.currentTarget.className += " active";
-}
-	</script>
-	<script>
+    }
+  </script>
+
+  <script>
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
@@ -85,25 +266,30 @@ $(document).ready(function(){
     $(window).scroll(function(event){
      didScroll = true;
     });
-    setInterval(function() {
-      if (didScroll) {
-        hasScrolled();
-        didScroll = false;
+    setInterval(
+      function() {
+        if (didScroll) {
+          hasScrolled();
+          didScroll = false;
       }
-    }, 250);
+    }
+    , 250);
     function hasScrolled() {
       var st = $(this).scrollTop();
-      if(Math.abs(lastScrollTop - st) <= delta)
+      if(Math.abs(lastScrollTop - st) <= delta){
         return;
+      }
       if (st > lastScrollTop && st > navbarHeight){
-      $('footer').removeClass('nav-down').addClass('footer-up');
-     } else {
-      if(st + $(window).height() < $(document).height()) {
-            $('footer').removeClass('footer-up').addClass('nav-down');
+        $('footer').removeClass('nav-down').addClass('footer-up');
+      }
+      else {
+        if(st + $(window).height() < $(document).height()) {
+          $('footer').removeClass('footer-up').addClass('nav-down');
         }
-    }
+      }
     lastScrollTop = st;
- }
-	</script>
-	<script src="js/nav.js"></script>
+    }
+  </script>
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/nav.js"></script>
 </html>

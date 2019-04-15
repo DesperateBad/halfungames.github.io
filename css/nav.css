@@ -172,7 +172,7 @@ img {
   -o-transform: translateY(-50%) scale(0);
   transform: translateY(-50%) scale(0);
   opacity: .6;
-  background: url(../img/method-draw-image1.svg) no-repeat 0 0;
+  background: url(../img/method-draw-image2.svg) no-repeat 0 0;
 }
 .cd-stretchy-nav ul a::before {
   /* line visible next to the active navigation item */
@@ -196,10 +196,10 @@ img {
 .cd-stretchy-nav ul li:nth-of-type(2) a::after {
   background-position: -64px 0;
 }
-.cd-stretchy-nav ul li:nth-of-type(3) a::after {
+.cd-stretchy-nav ul li:nth-of-type(4) a::after {
   background-position: -48px 0;
 }
-.cd-stretchy-nav ul li:nth-of-type(4) a::after {
+.cd-stretchy-nav ul li:nth-of-type(3) a::after {
   background-position: 0 0;
 }
 .cd-stretchy-nav ul li:nth-of-type(5) a::after {
